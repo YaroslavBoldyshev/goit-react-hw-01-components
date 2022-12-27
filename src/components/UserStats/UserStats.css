@@ -1,0 +1,26 @@
+.stats {
+  display: flex;
+  align-items: center;
+  background-color: rgba(164, 170, 213, 0.263);
+  border-top: 1px solid rgba(92, 146, 160, 0.364);
+}
+.label {
+  color: rgb(101, 100, 100);
+  font-size: 20px;
+}
+.stats > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid rgba(92, 146, 160, 0.364);
+  align-items: center;
+  width: 33.33%;
+  height: 80px;
+}
+.stats > li:last-child {
+  border-right: none;
+}
+.quantity {
+  font-weight: 700;
+  font-size: large;
+}

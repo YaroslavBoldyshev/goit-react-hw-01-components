@@ -1,0 +1,6 @@
+.statistics {
+  box-shadow: -1px 1px 5px rgba(33, 52, 56, 0.71);
+  border-radius: 8px;
+  margin-top: 20px;
+  overflow: hidden;
+}
