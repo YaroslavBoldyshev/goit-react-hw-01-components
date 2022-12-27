@@ -4,14 +4,12 @@ import PropTypes from "prop-types";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import StatList from "../StatList/StatList";
 const Statistics = ({ title, stats }) => (
-  <div>
-    <Container>
-      <section className={css.statistics}>
-        {title && <SectionTitle title={title} />}
-        <StatList stats={stats} />
-      </section>
-    </Container>
-  </div>
+  <Container>
+    <section className={css.statistics}>
+      {title && <SectionTitle title={title} />}
+      <StatList stats={stats} />
+    </section>
+  </Container>
 );
 export default Statistics;
 Statistics.propTypes = {
