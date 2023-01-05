@@ -1,13 +1,12 @@
 import { Container } from "../Container/Container";
 import UserMainInfo from "../UserMainInfo/UserMainInfo";
 import UserStats from "../UserStats/UserStats";
-import "./Profile.css";
 import PropTypes from "prop-types";
-
+import { ProfileDiv } from "./Profile.styled";
 const Profile = ({ username, tag, location, avatar, stats }) => (
   <div>
     <Container>
-      <div className="profile">
+      <ProfileDiv>
         <UserMainInfo
           username={username}
           tag={tag}
@@ -19,7 +18,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => (
           views={stats.views}
           likes={stats.views}
         />
-      </div>
+      </ProfileDiv>
     </Container>
   </div>
 );
